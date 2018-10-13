@@ -1,0 +1,15 @@
+Index: app/src/main/res/layout/activity_maps.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_maps.xml	(date 1539433926000)
++++ app/src/main/res/layout/activity_maps.xml	(date 1539434015000)
+@@ -12,6 +12,7 @@
+         tools:context="com.birthdaywish.surajvikash.chatapp.Activities.MapsActivity" />
+ 
+     <RelativeLayout
++        
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:layout_marginTop="20dp"
