@@ -1,0 +1,74 @@
+<!--
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Contact no"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Email id"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Address"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+    </LinearLayout>
+</FrameLayout>
+-->
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/main_activity_appbar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

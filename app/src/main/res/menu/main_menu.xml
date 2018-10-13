@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_users"
+        android:title="All Users"/>
+    <item
+        android:id="@+id/main_menu_location"
+        android:title="Share location"/>
+    <item
+        android:id="@+id/main_menu_map"
+        android:title="View location"/>
+    <item
+        android:id="@+id/main_menu_settings"
+        android:title="Account Setting" />
+    <item
+        android:id="@+id/main_menu_sign_out"
+        android:title="Sign Out"/>
+
+</menu>

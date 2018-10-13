@@ -1,0 +1,44 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/entry_page_appbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the new Chat App"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/entry_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account"/>
+
+        <Button
+            android:id="@+id/entry_newaccount_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Need a new Account ?"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

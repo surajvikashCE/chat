@@ -1,0 +1,85 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/settings_activity_appbar"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/setting_card"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:elevation="12dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="85dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/settings_activity_appbar"
+        android:layout_centerHorizontal="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/settings_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/londa"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImage="@mipmap/londa" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/settings_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/setting_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="Display Name" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/settings_display_name"
+        android:gravity="center"
+        android:text="Status"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/settings_change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_change_status"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorPrimary"
+        android:text="   CHANGE IMAGE   " />
+
+    <Button
+        android:id="@+id/settings_change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="  CHANGE STATUS  " />
+
+</RelativeLayout>

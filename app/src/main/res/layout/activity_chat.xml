@@ -1,0 +1,79 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d7d5d5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/chat_activity_appbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chat_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_activity_appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chat_messages_recycler_view"
+                android:layout_above="@+id/linearLayout">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_margin="2dp"
+                android:elevation="5dp"
+                android:paddingRight="3dp"
+                android:padding="5dp"
+                android:paddingLeft="3dp"
+                android:background="@drawable/chat_background"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/linearLayout">
+
+                <ImageButton
+                    android:id="@+id/chat_add_images"
+                    android:layout_width="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/chat_button_bg"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_add_circle"/>
+
+                <EditText
+                    android:id="@+id/chat_message_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="6"
+                    android:maxHeight="150dp"
+                    android:isScrollContainer="true"
+                    android:hint="Write your message here"/>
+
+                <ImageButton
+                    android:id="@+id/chat_send_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="9dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/chat_button_bg"
+                    android:layout_weight="1.1"
+                    android:src="@drawable/ic_send"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
